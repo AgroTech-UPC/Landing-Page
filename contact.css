@@ -1,0 +1,138 @@
+body{
+    background-image: url(img/contact-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#formulario{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+form{
+    background-color: rgba(240, 218, 139, 0.8);
+    padding: 2%;
+    border-radius: 5px;
+}
+
+#nombre-completo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+label{
+    font-size: 25px;
+    line-height: 1.5em;
+}
+
+textarea{
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+    border: black 1px solid;
+    border-radius: 4px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: black 1px solid;
+    border-radius: 4px;
+}
+
+#formNombre, #formApellidos{
+    width: 100%;
+}
+
+#formCorreo{
+    width: 100%;
+} 
+
+#botonForm{
+    padding-top: 1rem;
+    text-align: center;
+}
+
+input[type="submit"] {
+    /*Tamaño del boton*/
+    width: 299px;
+    height: 62px;
+
+    flex-shrink: 0;
+
+    /*Texto*/
+    color: white;
+    font-family: Inter, sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /*Color del boton*/
+    background-color: #DC763C;
+
+    /*Bordes*/
+    border: hidden;
+    border-radius: 11px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #F79C19;
+}
+
+@media only screen and (max-width: 850px) {
+    #nombre-completo{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    label {
+        font-size: 20px;
+        line-height: normal;
+    }
+    
+    .contactoFormulario{
+        margin-left: 15px;
+    }
+
+    #formNombre,
+    #formApellidos,
+    #formCorreo,
+    #formAsunto {
+        width: 90%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #formMensaje {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 400px)
+{
+    input[type="submit"]{
+        width: 200px;
+        height: 50px;
+    }
+}
