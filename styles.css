@@ -128,6 +128,42 @@ main{
     padding: 7rem 1rem;
 }
 
+/*section home--------------------------------*/
+.home-section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url("img/fondo-home.png") no-repeat center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.home-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-text h1 {
+    font-size: 45px;
+    font-weight: bold;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--text-primary-color);
+    text-shadow: 2px 2px 4px rgba(150, 150, 150, 0.5);
+}
+
+.home-text .yellow-text {
+    color: var(--secondary-color-second);
+}
+
+
 /*footer section----------------------------*/
 footer {
     position: absolute;
@@ -179,7 +215,7 @@ footer {
         top: 100%;
         right: -100%;
         width: 270px;
-        height: 35vh;
+        height: 39vh;
         background: #FFFFFF;
         display: flex;
         flex-direction: column;
