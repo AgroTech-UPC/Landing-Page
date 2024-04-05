@@ -1,0 +1,52 @@
+.about-section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url("img/fondo-about-app.jpg") no-repeat center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.about-text {
+    margin-top: 50px;
+    display: flex;
+    text-align: center;   
+    font-size: 48px;
+    font-weight: bold;
+    color: #DC763C;    
+}
+
+.columns {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20rem;
+    list-style: none;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+
+@media (max-width: 1200px) {
+    .about-text { 
+        font-size: 40px;  
+    }
+    .columns { 
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 6rem; 
+        font-size: 24px; 
+    }
+}
+@media (max-width: 660px) {
+    .about-text { 
+        font-size: 21px;  
+    }
+    .columns { 
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 6rem; 
+        font-size: 16px; 
+    }
+}
