@@ -21,6 +21,7 @@ body{
     min-height: 100vh;
     background-color:var(--secondary-color-second);
     color: color(--secondary-color);
+    position:relative;
 }
 
 
@@ -86,14 +87,15 @@ header{
     color: var(--text-secundary-color);
 }
 
-.main{
+/*displayable menu*/
+.menu{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.main a{
+.menu a{
     margin-right: 25px;
     margin-left: 10px;
     color: #FFFFFF;
@@ -107,21 +109,7 @@ header{
     padding: 10px;
 }
 
-.main .usser{
-    color: var(--text-primary-color);
-    border: 2px solid var(--primary-color);
-    background: var(--primary-color);
-    padding: 20px;
-}
-
-.main .register{
-    display: flex;
-    align-items: center;
-    border: 2px solid #ffffff;
-    padding: 20px;
-}
-
-.main a:hover{
+.menu a:hover{
     background-color: #d66e6c;
     box-shadow: 0px 0px 10px #d66e6c;
 }
@@ -134,9 +122,45 @@ header{
     display: none;
 }
 
-/**seccion**/
-section{
-    padding: 120px 5%;
+/*main section of the page*/
+
+main{
+    padding: 7rem 1rem;
+}
+
+/*section home--------------------------------*/
+.home-section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url("img/fondo-home.png") no-repeat center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.home-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-text h1 {
+    font-size: 45px;
+    font-weight: bold;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--text-primary-color);
+    text-shadow: 2px 2px 4px rgba(150, 150, 150, 0.5);
+}
+
+.home-text .yellow-text {
+    color: var(--secondary-color-second);
 }
 
 
@@ -191,7 +215,7 @@ footer {
         top: 100%;
         right: -100%;
         width: 270px;
-        height: 35vh;
+        height: 39vh;
         background: #FFFFFF;
         display: flex;
         flex-direction: column;
@@ -223,7 +247,7 @@ footer {
         right: 2%;
     }
 
-    .main a{
+    .menu a{
         padding: 5px;
     }
 }
@@ -235,12 +259,12 @@ footer {
 }
 
 @media (max-width: 742px) {
-    .main {
+    .menu {
         flex-direction: column;
         align-items: center;
     }
 
-    .main a {
+    .menu a {
         margin: 5px 0;
     }
 }

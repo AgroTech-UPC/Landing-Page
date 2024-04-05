@@ -6,6 +6,7 @@
     <title>AgroConnect</title>
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
     <!-- Icon -->
     <link rel="icon" href="img/icon.png" type="image/x-icon">
     <!--fonts-->
@@ -35,13 +36,31 @@
         </div>
     </header>
 
-    <main class="home-section">
-        <div class="home-text">
-            <h1>Crianza moderna,</h1>
-            <h1>Resultados <span class="yellow-text">duraderos.</span></h1>
+    <main>
+        <div id="formulario">   
+            <form>
+                <h1> CONTÁCTANOS </h1>
+                <div id="nombre-completo">
+                    <div class="nombre">
+                        <label for="formNombre">Nombre(s): </label><br>
+                        <input type="text" id="formNombre" placeholder="Ingresa tu nombre"><br>
+                    </div>
+                   <div class="apellidos">
+                        <label for="formApellidos">Apellidos: </label><br>
+                        <input type="text" id="formNombre" placeholder="Ingresa tus apellidos"><br>
+                   </div>
+                </div>
+                <label for="formCorreo">Correo electrónico: </label><br>
+                <input type="text" id="formCorreo" placeholder="Ingresa tu correo" required><br>
+                <label for="formMensaje">Mensaje: </label><br>
+                <textarea id="formMensaje" cols="55" rows="10" placeholder="Introduce tu mensaje" required></textarea>
+                <div id="botonForm">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
         </div>
     </main>
-
+        
     <footer>
         <h4 class="footer-text">AgroTech - soluciones eficientes</h4> 
         <ul class="social-icons">
