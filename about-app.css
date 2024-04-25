@@ -11,10 +11,10 @@
 }
 
 .about-text {
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
-    text-align: center;   
-    font-size: 48px;
+    text-align: center;
+    font-size: 30px;
     font-weight: bold;
     color: #DC763C;    
 }
@@ -23,16 +23,16 @@
     margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20rem;
+    grid-gap: 5rem;
     list-style: none;
-    font-size: 24px;
+    font-size: 20px;
     color: #FFFFFF;
 }
 
 
 @media (max-width: 1200px) {
     .about-text { 
-        font-size: 40px;  
+        font-size: 40px;
     }
     .columns { 
         grid-template-columns: repeat(1, 1fr);
@@ -42,7 +42,8 @@
 }
 @media (max-width: 660px) {
     .about-text { 
-        font-size: 21px;  
+        font-size: 21px;
+        margin-top: 5px;
     }
     .columns { 
         grid-template-columns: repeat(1, 1fr);
