@@ -1,24 +1,40 @@
 body{
-    background-image: url(img/about-us-background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url(img/about-us-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 h1{
-    text-align: center;
-    padding-bottom: 1rem;
-    /* color DC763C */
-    color: #DC763C;
+  text-align: center;
+  padding-bottom: 1rem;
+  color: #DC763C;
+  font-size: 48px;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 p{
-    color: #FFFFFF;
-    text-align: center;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+}
+
+.perfil {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Clase container */
 .container {
+    margin-top: 3%;
+    margin-bottom: 1%;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
@@ -39,6 +55,19 @@ p{
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+    margin-top: 3%;
+    text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 992px) {
