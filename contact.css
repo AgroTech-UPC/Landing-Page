@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.2)), url("img/contact-background.jpg") no-repeat center fixed;
+    background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("img/contact-background.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
