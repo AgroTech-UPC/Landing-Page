@@ -5,91 +5,86 @@ body{
     background-repeat: no-repeat;
 }
 
-h1{
+h1 {
     text-align: center;
     padding-bottom: 1rem;
-    color: #DC763C;
+    color: white;
     font-size: 48px;
+    margin-top: 50px;
 }
 
-h2{
-    text-align: center;
-    padding-bottom: 1rem;
-    color: #F0DA8B;
-    font-size: 30px;
-}
-
-.imagen-funcionalidad{
-    margin-top: 10px;
-    width: 450px;
-}
-
-p{
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 24px;
-}
-
-/* Clase container */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
+main{
     display: flex;
     flex-direction: column;
-}
-.row-title{
-    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+    height: 100%;
 }
 
-.col-4,
-.col-6 {
-    
-    text-align: justify;
+.container{
+    flex-direction: column; 
+    align-items: center; 
 }
 
-/* Estilos para las columnas */
-[class^="col-"] {
+.card{
+    height: 100%;
+    width: 100%;
+    max-width: 90%;
+    margin: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
     position: relative;
-    width: 33.33%;
-    padding-right: 15px;
-    padding-left: 15px;
+    flex-direction: column; 
+    align-items: center;
 }
 
-@media (max-width: 1255px) {
-    .row_title{
-        display: flex;
-        width: 100%;
-    }
-    .row{
-        flex-direction: column;
-        width: 100%;
-    }
-    .col-6, .col-4{
-        width: 100%;
-        padding: 10px 0px;
-    }
+.container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
 }
 
-@media (max-width: 660px) {
-    h1 {
-        font-size: 36px;
-    }
-    h2{
-        font-size: 22px;
-    }
-
-    p{
-        font-size: 18px;
-    }
+.intro{
+    height: 70px;
+    width: 100%;
+    bottom: 0px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(253, 163, 45, 0.5);
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 
+.intro h2{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.intro p{
+    font-size: 15px;
+    margin: 10px;
+    visibility: hidden;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .intro {
+    height: 120px;
+    bottom: 0px;
+    background: hsl(34, 98%, 58%);
+    transition: 0.5s;
+}
+
+.card:hover .intro p {
+    visibility: visible;
+    opacity: 1;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
