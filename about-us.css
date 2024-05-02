@@ -1,6 +1,6 @@
 body {
   background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url("img/about-us-background.jpg") no-repeat center fixed;
-    background-size: cover;
+  background-size: cover;
 }
 
 h1{
