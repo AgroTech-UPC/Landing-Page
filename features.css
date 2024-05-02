@@ -15,8 +15,13 @@ h1{
 h2{
     text-align: center;
     padding-bottom: 1rem;
-    color: #DC763C;
+    color: #F0DA8B;
     font-size: 30px;
+}
+
+.imagen-funcionalidad{
+    margin-top: 10px;
+    width: 450px;
 }
 
 p{
@@ -33,10 +38,11 @@ p{
     display: flex;
     flex-direction: column;
 }
-.row_title{
+.row-title{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .row {
     display: flex;

@@ -20,15 +20,46 @@
 }
 
 .columns {
-    margin-top: 80px;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5rem;
+    line-height: 1.5;
     list-style: none;
     font-size: 20px;
     color: #FFFFFF;
+    width: 80%;
 }
 
+.imagen-problematica{
+    margin-top: 20px;
+    width: 300px;
+}
+
+.call h1{
+    margin-top: 40px;
+    display: flex;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #F0DA8B; 
+}
+
+.button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #DC763C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover{
+    background-color: #df5e14;
+}
 
 @media (max-width: 1200px) {
     .about-text { 
